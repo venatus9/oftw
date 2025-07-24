@@ -5,6 +5,7 @@ from openai import OpenAI
 PREPROCESSED_DIR = 'data_preprocessed'
 RESULTS_FILE = 'results.csv'
 
+
 api_key = os.getenv("OPENAI_API_KEY")
 if not api_key:
     raise RuntimeError("OPENAI_API_KEY environment variable not set")
