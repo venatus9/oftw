@@ -24,8 +24,8 @@ def analyze_json(file_path: str, model: str = "gpt-4o") -> str:
         data_str = f.read()
 
     prompt = (
-        f"""YOUR PROMPT
-
+        f"""You have been provided a json log file and are tasked with identifying any possible malicious activities present in the log.
+        You are to give any particularly suspicious findings in a csv file. Ignore non-suspicious activity. Output only the csv file.
         Here is the JSON to analyze:
         {data_str}
         """
