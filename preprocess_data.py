@@ -72,8 +72,8 @@ def truncate_json_by_accumulation(input_path: str, output_path: str) -> str:
     return output_path
 
 if __name__ == "__main__":
-    input_file = "/Users/martinativadar/Desktop/masterLLM/malware/keySteal.json"
-    output_file = "keySteal_truncated_last_filtered_short.json"
+    input_file = "/data/data.json"
+    output_file = "proc_data.json"
     try:
         truncate_json_by_accumulation(input_file, output_file)
     except Exception as e:
